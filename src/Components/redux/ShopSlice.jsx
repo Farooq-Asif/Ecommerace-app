@@ -42,10 +42,8 @@ const ShopSlice = createSlice({
             }
             else {
                 const updatedQty = myCart[productIndex].qty + 1;
-                // console.log({ updatedQty });
                 state.cartdata[productIndex] = { ...action.payload, qty: updatedQty }
             }
-            // console.log(current(state.cartdata));
         },
         removecart: (state, action) => {
        
