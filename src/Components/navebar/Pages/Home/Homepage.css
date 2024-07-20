@@ -1,0 +1,38 @@
+
+.featurecatagory img{
+transition: all 0.3s ease;
+/* overflow: hidden; */
+object-fit: cover;
+}
+
+.featurecatagory img:hover{
+     transform: scale(1.1);
+     cursor: pointer;  
+  
+}
+.img-text{
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+}
+/*  */
+.featurecol img{
+    transition: all 0.3s ease;
+overflow: hidden;
+object-fit: cover;
+}
+.featurecol img:hover{
+    transform: scale(1.0);
+    cursor: pointer;  
+}
+.featurecol{
+transition: all 0.4s ease;
+}
+.featurecol:hover{
+     transform: scale(1.1);
+     /* background-color: red; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.carasoul-text{
+
+}

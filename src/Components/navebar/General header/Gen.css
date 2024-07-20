@@ -1,0 +1,16 @@
+  .register-btn + .register-label:checked{
+    background-color: red;
+    cursor: pointer;
+}
+
+.products-select-tag{
+  background: transparent;
+  border: 0.2px solid balck;
+  
+}
+
+
+
+.modal-backdrop{
+  display: none;
+}

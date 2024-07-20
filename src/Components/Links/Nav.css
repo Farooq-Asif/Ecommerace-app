@@ -1,0 +1,14 @@
+a:link {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px 20px;
+    display: flex;
+
+}
+
+.navlinks{
+   
+    color: black;
+    
+
+}

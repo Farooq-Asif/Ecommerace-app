@@ -1,0 +1,29 @@
+.background-green{
+    background-color: rgba(131, 183, 53, 1);
+}
+.defender{
+    border-left: 2px solid white;
+
+  
+}
+.languages-select{
+    background: transparent;
+    border-color: transparent;
+    border: none;
+}
+.languages-select:active{
+  background: transparent;
+  border: none;
+  border-color: transparent;
+}
+.country-select{
+    background: transparent;
+    border-color: transparent;
+    border: none;
+}
+.country-select:active{
+    background: transparent;
+    border-color: transparent;
+    border: none;
+}
+
