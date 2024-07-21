@@ -10,9 +10,6 @@ const Id = () => {
   const { id } = useParams()
   const dispatch = useDispatch()
   const {filterdata,status } = useSelector((state) => state.Shopdata)
-  
-
-  const { description, availabilityStatus, brand, category, discountPercentage, price, rating, returnPolicy, shippingInformation, stock, weight, images, title } = filterdata
 
  
 
