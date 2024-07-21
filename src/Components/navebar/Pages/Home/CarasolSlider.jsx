@@ -1,7 +1,7 @@
 import React from 'react'
-import carasoulimg1 from '/home/farooq/1stproject/src/Images/chair-new-shadow-opt-4.png.webp'
-import carasoulimg2 from '/home/farooq/1stproject/src/Images/lamp-new-opt-2.png.webp'
-import carasoulimg3 from '/home/farooq/1stproject/src/Images/slide-3-on-green-sized-opt.png.webp'
+import carasoulimg1 from '../../../../Images/chair-new-shadow-opt-4.png.webp'
+import carasoulimg2 from '../../../../Images/lamp-new-opt-2.png.webp'
+import carasoulimg3 from '../../../../Images/slide-3-on-green-sized-opt.png.webp'
 const CarasolSlider = () => {
     return (
         <div id="carouselExampleDark" className="carousel carousel-dark slide container-fluid mt-5 mb-2 

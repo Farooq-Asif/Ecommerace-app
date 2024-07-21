@@ -1,12 +1,12 @@
 import React from 'react'
 
-import image1 from '/home/farooq/1stproject/src/Images/product-furniture-7-3-430x490.jpg.webp'
-import image2 from '/home/farooq/1stproject/src/Images/dock-black-walnut-ip6-grid-B1_1.jpg'
-import image3 from '/home/farooq/1stproject/src/Images/product-accessories-8-1-430x491.jpg'
-import image4 from '/home/farooq/1stproject/src/Images/product-furniture-11-3.jpg'
-import image5 from '/home/farooq/1stproject/src/Images/product-furniture-19-430x491.jpg'
-import image6 from '/home/farooq/1stproject/src/Images/product-furniture-8.jpg'
-import image7 from '/home/farooq/1stproject/src/Images/product-light-5-2-430x490.jpg.webp'
+import image1 from '../../../../Images/product-furniture-7-3-430x490.jpg.webp'
+import image2 from '../../../../Images/dock-black-walnut-ip6-grid-B1_1.jpg'
+import image3 from '../../../../Images/product-accessories-8-1-430x491.jpg'
+import image4 from '../../../../Images/product-furniture-11-3.jpg'
+import image5 from '../../../../Images/product-furniture-19-430x491.jpg'
+import image6 from '../../../../Images/product-furniture-8.jpg'
+import image7 from '../../../../Images/product-light-5-2-430x490.jpg.webp'
 
 const Featuredcatagories = () => {
     return (

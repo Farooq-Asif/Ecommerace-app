@@ -1,10 +1,10 @@
 import React from 'react'
-import Featuredimg1 from '/home/farooq/1stproject/src/Images/product-accessories-8.jpg'
-import Featuredimg2 from '/home/farooq/1stproject/src/Images/product-furniture-8.jpg'
-import Featuredimg3 from '/home/farooq/1stproject/src/Images/product-clock-2-1.jpg.webp'
-import Featuredimg4 from '/home/farooq/1stproject/src/Images/product-accessories-10.jpg'
-import Featuredimg5 from '/home/farooq/1stproject/src/Images/product-furniture-14-2.jpg'
-import Featuredimg6 from '/home/farooq/1stproject/src/Images/product-furniture-19-3.jpg'
+import Featuredimg1 from '../../../../Images/product-accessories-8.jpg'
+import Featuredimg2 from '../../../../Images/product-furniture-8.jpg'
+import Featuredimg3 from '../../../../Images/product-clock-2-1.jpg.webp'
+import Featuredimg4 from '../../../../Images/product-accessories-10.jpg'
+import Featuredimg5 from '../../../../Images/product-furniture-14-2.jpg'
+import Featuredimg6 from '../../../../Images/product-furniture-19-3.jpg'
 
 
 const Featuredproducts = () => {
