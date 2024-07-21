@@ -1,10 +1,5 @@
 import React from 'react'
-import Blog from '../navebar/Pages/Blog/Blog'
-import Home from '../navebar/Pages/Home/Home'
-import Shop from '../navebar/Pages/Shop/Shop'
-import Buy from '../navebar/Pages/Buy/Buy'
 import { NavLink } from 'react-router-dom'
-import Catagories from './catagories/Catagories'
 const Navelink = () => {
   return (
     <>

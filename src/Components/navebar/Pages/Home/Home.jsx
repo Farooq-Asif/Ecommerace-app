@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import Featuredcatagories from './Featuredcatagories'
 import Featuredproducts from './Featuredproducts'
 import './Homepage.css'

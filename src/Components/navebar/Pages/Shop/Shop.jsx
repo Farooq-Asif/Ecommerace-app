@@ -1,21 +1,18 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { NavLink, useNavigate, useParams } from 'react-router-dom'
-import axios from 'axios'
+import {  useNavigate } from 'react-router-dom'
 import { Shopdataapi } from '../../../redux/ShopSlice'
 import { STATUSES } from '../../../redux/ShopSlice'
 const Shop = () => {
   const { data:apidata,status,cartcategory } = useSelector((state) => state.Shopdata)
   const dispatch = useDispatch()
- if(cartcategory.length >0){
-  console.log(cartcategory);
- }
+
   const navigate=useNavigate()
 
 
-  useEffect( () => {
+  useEffect(() => {
     dispatch(Shopdataapi({qty:1}))
-  }, [])
+  },[])
 
 if(status===STATUSES.LOADING){
   return <h2 className='text-center mt-5'>Please Wait</h2>
@@ -38,7 +35,7 @@ navigate(`/projects/${id}`)
           return (
             <div className="col" key={index}>
             <div className="card text-center" key={id} onClick={( )=>handelcard(id)}style={{cursor:'pointer'}}>
-            <img src={images}/>
+            <img src={images} alt='img-1'/>
               <h2>Product :{title}</h2>
               <h5>catagory: {category}</h5>
               <h6>Brand: {brand}</h6>
@@ -51,7 +48,7 @@ navigate(`/projects/${id}`)
           return (
             <div className="col" key={index}>
             <div className="card text-center" key={id} onClick={( )=>handelcard(id)}style={{cursor:'pointer'}}>
-            <img src={images}/>
+            <img src={images} alt='img--1'/>
               <h2>Product :{title}</h2>
               <h5>catagory: {category}</h5>
               <h6>Brand: {brand}</h6>

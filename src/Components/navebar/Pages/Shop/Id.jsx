@@ -1,31 +1,23 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
-import axios from 'axios'
-import { Shopdataapi } from '../../../redux/ShopSlice'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { filtersdatathunk } from '../../../redux/ShopSlice'
 import { addtocart } from '../../../redux/ShopSlice'
-import { styled } from '@mui/material'
 import { STATUSES } from '../../../redux/ShopSlice'
 const Id = () => {
   const { id } = useParams()
   const dispatch = useDispatch()
-  const { data, filterdata,status } = useSelector((state) => state.Shopdata)
-  const [fdata, setfdata] = useState([])
+  const {filterdata,status } = useSelector((state) => state.Shopdata)
+  
 
   const { description, availabilityStatus, brand, category, discountPercentage, price, rating, returnPolicy, shippingInformation, stock, weight, images, title } = filterdata
 
-  useEffect(() => {
-    if (Object.keys(filterdata).length > 0) {
-
-      setfdata(filterdata)
-    }
-  }, [])
+ 
 
   const handelcart = (filterdata) => {
-    console.log("🚀 : ~ file: Id.jsx:28 ~ handelcart ~ filterdata", filterdata);
+    
     dispatch(addtocart({ ...filterdata, qty: 1 }))
 
   }
