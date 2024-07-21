@@ -1,6 +1,6 @@
 import './App.css';
 import Navebar from './Components/Links/Navebar';
-import Navelink from './Components/Links/Navelink';
+
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Store from './Components/redux/Store';

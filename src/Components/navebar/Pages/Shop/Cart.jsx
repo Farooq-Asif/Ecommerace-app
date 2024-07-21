@@ -1,23 +1,18 @@
-import React, { useContext, useEffect, useState } from 'react'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { removecart } from '../../../redux/ShopSlice'
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import { STATUSES } from '../../../redux/ShopSlice';
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
-import { CarRental } from '@mui/icons-material';
-import { SomeContext } from '../../../../App'
-import { ListItem } from '@mui/material';
-import { Toast } from 'bootstrap';
+
+
 
 const Cart = () => {
-    const { setlength } = useContext(SomeContext)
-    const { cartdata, status } = useSelector((state) => state.Shopdata)
-    console.log("🚀 : ~ file: Cart.jsx:15 ~ Cart ~ cartdata", cartdata);
+    
+    const { cartdata,  } = useSelector((state) => state.Shopdata)
+  
 
     if (cartdata.length > 0) {
-        console.log("🚀 : ~ file: Cart.jsx:12 ~ Cart ~ cartdata", cartdata);
+        // console.log("🚀 : ~ file: Cart.jsx:12 ~ Cart ~ cartdata", cartdata);
     }
     // const index=cartdata.indexOf((cartdata))
     // console.log("🚀 : ~ file: Cart.jvsx:19 ~ Cart ~ index", index);
@@ -32,24 +27,24 @@ const Cart = () => {
        return  a + b.qty *b.price
 },0)
    
-    const [quantity, setquantity] = useState(0)
-    const increment = () => {
-        setquantity(quantity + 1)
-    }
+    // const [quantity, setquantity] = useState(0)
+    // const increment = () => {
+    //     setquantity(quantity + 1)
+    // }
 
 
 
 
 
-    const decrement = () => {
+    // const decrement = () => {
 
-        setquantity(quantity - 1)
-        if (quantity > 0) {
-            setquantity(quantity - 1)
-        } else {
-            setquantity(quantity - 0)
-        }
-    }
+    //     setquantity(quantity - 1)
+    //     if (quantity > 0) {
+    //         setquantity(quantity - 1)
+    //     } else {
+    //         setquantity(quantity - 0)
+    //     }
+    // }
     if (cartdata.length === 0) {
         return (
             <div className="container d-flex justify-content-center align-items-center" style={{ height: '33vh' }}>

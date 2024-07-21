@@ -1,6 +1,6 @@
 import { createSlice, current } from '@reduxjs/toolkit'
 import axios from 'axios'
-import React from 'react'
+
 export const STATUSES = Object.freeze({
     IDLE: 'idle',
     ERROR: 'error',
@@ -36,26 +36,25 @@ const ShopSlice = createSlice({
         addtocart: (state, action) => {
             const myCart = [...current(state.cartdata)];
             const productIndex = myCart.findIndex(prod => prod.id === action.payload.id);
-            console.log({ productIndex });
+            // console.log({ productIndex });
             if (productIndex === -1) {
                 state.cartdata.push(action.payload)
             }
             else {
                 const updatedQty = myCart[productIndex].qty + 1;
-                // console.log({ updatedQty });
                 state.cartdata[productIndex] = { ...action.payload, qty: updatedQty }
             }
-            // console.log(current(state.cartdata));
         },
         removecart: (state, action) => {
-       
-        const itemremove=state.cartdata.filter(
-            (item)=>item.id!==action.payload
-        )
-        state.cartdata=itemremove
-        //     console.log("🚀 : ~ file: ShopSlice.jsx:55 ~ rmvitm", rmvitm);
-        //    state.cartdata.splice(rmvitm,1)
+
+            const itemremove = state.cartdata.filter(
+                (item) => item.id !== action.payload
+            )
+            state.cartdata = itemremove
             
+            //     console.log("🚀 : ~ file: ShopSlice.jsx:55 ~ rmvitm", rmvitm);
+            //    state.cartdata.splice(rmvitm,1)
+
         }
 
 

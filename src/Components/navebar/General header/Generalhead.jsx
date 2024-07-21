@@ -1,7 +1,6 @@
 import React from 'react'
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import './Gen.css'
 import Offcanvasleft from '../Canvas/Offcanvasleft';
 import { Searchinput, Productsselecttag } from './Genrealcompo/GenCompo';
